@@ -1,4 +1,4 @@
-from gaphor.babel import extract_gaphor
+from gaphor._babel import extract_gaphor
 
 
 def test_babel(test_models):

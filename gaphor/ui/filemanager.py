@@ -12,7 +12,7 @@ from gi.repository import Adw, Gio, Gtk
 
 from gaphor.abc import ActionProvider, Service
 from gaphor._asyncio import TaskOwner, response_from_adwaita_dialog, sleep
-from gaphor.babel import translate_model
+from gaphor._babel import translate_model
 from gaphor.core import action, event_handler, gettext
 from gaphor.core.changeset.compare import compare
 from gaphor.core.modeling import ElementFactory, ModelReady
