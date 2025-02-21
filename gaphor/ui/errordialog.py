@@ -10,7 +10,7 @@ import sys
 
 from gi.repository import Adw
 
-from gaphor.asyncio import response_from_adwaita_dialog
+from gaphor._asyncio import response_from_adwaita_dialog
 from gaphor.i18n import gettext
 
 

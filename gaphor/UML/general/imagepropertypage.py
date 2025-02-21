@@ -4,7 +4,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from gaphor.asyncio import TaskOwner
+from gaphor._asyncio import TaskOwner
 from gaphor.core import gettext
 from gaphor.diagram.propertypages import PropertyPageBase, PropertyPages, new_builder
 from gaphor.transaction import Transaction

@@ -16,7 +16,7 @@ gi.require_version("Adw", "1")
 
 from gi.repository import Adw, Gio, GtkSource
 
-import gaphor.asyncio
+import gaphor._asyncio
 import gaphor.ui.diagramview  # noqa: F401
 import gaphor.ui.textfield  # noqa: F401
 from gaphor.application import Application, Session
@@ -103,7 +103,7 @@ def run(argv: list[str], *, launch_service="greeter", recover=False) -> int:
     gtk_app.connect("activate", app_activate)
     gtk_app.connect("open", app_open)
 
-    with gaphor.asyncio.glib_event_loop_policy():
+    with gaphor._asyncio.glib_event_loop_policy():
         gtk_app.run(argv)
 
     return gtk_app.exit_code

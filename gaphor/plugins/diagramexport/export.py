@@ -5,7 +5,7 @@ from pathlib import Path
 from gi.repository import Gtk
 
 from gaphor.abc import ActionProvider, Service
-from gaphor.asyncio import TaskOwner
+from gaphor._asyncio import TaskOwner
 from gaphor.core import action, gettext
 from gaphor.diagram.export import (
     escape_filename,
